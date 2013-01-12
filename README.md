@@ -16,8 +16,12 @@ exploitsearch.net crawls possible security databases and depending on the qualit
 * Mario Oršolić - (https://github.com/originx)
 
 ###TO DO:
--Improve OS fingerprint query if possible, results are sometimes unpredictable if there is not enough information
+-Improve OS fingerprint query if possible
+
+-Improve port and service data gathering and querying
+
 -Set http headers for more polite querys.
+
 -Clean up code <- prehaps there are some finished libraries for eg. url escape chars.
 
 ##Mentored under:
