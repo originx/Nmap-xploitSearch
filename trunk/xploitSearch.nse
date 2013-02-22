@@ -14,12 +14,12 @@ Mentored under:
 --FOI OSS--
 -Faculty of Organisation and Informatics  - Open Systems and Security -
 http://security.foi.hr/wiki/index.php/Glavna_stranica
-Tonimir Kišasondi
+Tonimir Kiï¿½asondi
 ------------------------------------------------------------------------
 ]]
 ---
 -- @usage
--- nmap -sC -O foi.hr -script xploitSearch.nse --script exploit-search.nse [--script-args detailed=<boolean> forcedOS=<String> exploitsOnly=<boolean> ] <target>
+-- nmap -sC -O sitename.com -script xploitSearch.nse --script exploit-search.nse [--script-args detailed=<boolean> forcedOS=<String> exploitsOnly=<boolean> ] <target>
 --
 -- @args detailed Show detailed listing of found exploits (optional), recommended to be outputed to external file with -oX file.xml or simmilar technique because of possible verbosity.
 -- @args forcedOS Manualy set detected operating system
@@ -44,7 +44,7 @@ Tonimir Kišasondi
 -- |   numberOfExploits: 83
 -- |_  onQuery:  Linux 2.4.36 tcp/80 http
 
-author = "Mario Oršoliæ"
+author = "Mario Orï¿½oliï¿½"
 license = "Same as Nmap--See http://nmap.org/book/man-legal.html"
 categories = {"default", "discovery", "safe"}
 
