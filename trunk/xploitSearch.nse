@@ -119,6 +119,7 @@ action = function(host, port)
 				if port.version.ostype ~=nil then
 					query = query .. " ".. stripchars(port.version.ostype,";\\/-))((")
 				end
+				query = stripchars(query,"()")
 		end
 	--if user forced to search only for exploits append it to query
 	return checkForExploits(query,hostfound,detailedFlag,exploitsOnly)
