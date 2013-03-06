@@ -103,8 +103,21 @@ action = function(host, port)
 		if port.number ~= nil then
 			query = query ..port.protocol .."/".. port.number
 				--if there is service name append it to query
-				if port.version.name ~=nil and port.version.name ~="" and port.version.name ~= "unknown" then
+				if port.version.name ~=nil and port.version.name ~="" or port.version.name ~= "unknown" then
 				query = query .. " ".. port.version.name
+				end
+				--if there is service version append it to query
+				if port.version.extrainfo ~=nil then
+					query = query .. " ".. stripchars(port.version.extrainfo,";\\/-))((")
+				end
+				if port.version.version ~=nil then
+					query = query .. " ".. stripchars(port.version.version,";\\/-))((")
+				end
+				if port.version.product ~=nil then
+					query = query .. " ".. stripchars(port.version.product,";\\/-))((")
+				end
+				if port.version.ostype ~=nil then
+					query = query .. " ".. stripchars(port.version.ostype,";\\/-))((")
 				end
 		end
 	--if user forced to search only for exploits append it to query
