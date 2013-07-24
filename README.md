@@ -4,7 +4,7 @@
 Get data from scanned ports and services with OS fingerprint (if exists)
 and query exploitsearch.net to get possible number of exploits on specific service.
 
-Usage: nmap -sC -O foi.hr -script xploitSearch.nse --script exploit-search.nse [--script-args detailed=\<boolean\> forcedOS=\<String\> exploitsOnly=\<boolean\> ] \<target\>
+Usage: nmap -sC -O ipLocation -script xploitSearch.nse --script exploit-search.nse [--script-args detailed=\<boolean\> forcedOS=\<String\> exploitsOnly=\<boolean\> ] \<target\>
 
 For detailed usage check script source (LuaDoc)
 
