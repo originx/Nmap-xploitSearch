@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Nmap-xploitsearch by originx</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Nmap-xploitsearch</h1>
+        <h2>repozitorij za potrebe kolegija SIS</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/originx/Nmap-xploitSearch/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/originx/Nmap-xploitSearch/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/originx/Nmap-xploitSearch" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="xploitsearch-v-10" class="anchor" href="#xploitsearch-v-10"><span class="octicon octicon-link"></span></a>xploitSearch v 1.0</h1>
+
+<h2>
+<a name="nmap-script-for-detecting-exploits-on-remote-hosts" class="anchor" href="#nmap-script-for-detecting-exploits-on-remote-hosts"><span class="octicon octicon-link"></span></a>Nmap script for detecting exploits on remote hosts</h2>
+
+<p>Get data from scanned ports and services with OS fingerprint (if exists) and query exploitsearch.net to get possible number of exploits on specific service.</p>
+
+<p>Usage: nmap -sC -O ipLocation -script xploitSearch.nse --script exploit-search.nse [--script-args detailed= forcedOS= exploitsOnly= ] </p>
+
+<p>For detailed usage check script source (LuaDoc)</p>
+
+<h2>
+<a name="disclaimer" class="anchor" href="#disclaimer"><span class="octicon octicon-link"></span></a>DISCLAIMER:</h2>
+
+<p>Number of shown exploits doesn't reflect possible number of security holes that exists on your server. exploitsearch.net crawls possible security databases and depending on the quality of the query returns different results.
+Contributors:</p>
+
+<p>**  Mario Oršolić - (<a href="https://github.com/originx)**">https://github.com/originx)**</a></p>
+
+<h3>
+<a name="to-do" class="anchor" href="#to-do"><span class="octicon octicon-link"></span></a>TO DO:</h3>
+
+<ul>
+<li>Improve OS fingerprint query if possible</li>
+<li>Improve port and service data gathering and querying</li>
+<li>Set http headers for more polite querys.</li>
+<li>Clean up code &lt;- prehaps there are some finished libraries for eg. url escape chars.</li>
+</ul><h2>
+<a name="mentored-under" class="anchor" href="#mentored-under"><span class="octicon octicon-link"></span></a>Mentored under:</h2>
+
+<h2>
+<a name="foi-oss" class="anchor" href="#foi-oss"><span class="octicon octicon-link"></span></a>FOI OSS</h2>
+
+<pre><code>Open Systems and Security Lab
+Faculty of Organization and Informatics
+http://security.foi.hr/wiki/index.php/Glavna_stranica
+Class: Sigurnost informacijskih sustava
+</code></pre>
+
+<p>Tonimir Kišasondi - (<a href="https://github.com/tkisason">https://github.com/tkisason</a>)</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
